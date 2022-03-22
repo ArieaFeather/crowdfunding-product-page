@@ -1,0 +1,152 @@
+<%- include("partials/_header.ejs") %>
+<div class="nav">
+    <img src="images/logo.svg" alt="Crowdfund Logo" id="cf-logo">
+    <a id="hamburg-menu">
+        <b></b>
+        <b></b>
+        <b></b>
+    </a>
+    <div class="nav nav-bar">
+        <a href="#" class="nav-bar--item nav-link">About</a>
+        <a href="#" class="nav-bar--item nav-link">Discover</a>
+        <a href="#" class=" nav-bar--item nav-link">Get Started</a>
+    </div>
+</div>
+<div class="container">
+    <img src="images/logo-mastercraft.svg" alt="Mastercraft Logo" id="mc-logo">
+    <section id="section-1">
+        <h1 class="header header--main">
+            Mastercraft Bamboo Monitor Riser
+        </h1>
+        <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.
+        </p>
+        <div class="btn-options btn-options--main">
+            <a class="btn" alt="Back This Page Button">Back this project
+            </a>
+            <label class="bookmark-box">
+                <input type="checkbox">
+                <a class="bookmark" alt="Bookmark">Bookmark</a>
+                <a class="bookmark bookmark--mob" alt="Bookmark"></a>
+            </label>
+        </div>
+
+    </section>
+    <section id="section-2">
+        <div class="backer-block--stat">
+            <div class="backer-block--stat-inner">
+                <h1 class="header header--secodnary">
+                    $89,914
+                </h1>
+                <p class="backer-stat">of $100,000 backed</p>
+            </div>
+            <hr>
+            <div class="backer-block--stat-inner">
+                <h1 class="header header--secodnary">5,007</h1>
+                <p class="backer-stat">total backers</p>
+            </div>
+            <hr>
+            <div class="backer-block--stat-inner">
+                <h1 class="header header--secodnary">56</h1>
+                <p class="backer-stat">days left</p>
+            </div>
+        </div>
+        <div class="backer-progressbar">
+
+        </div>
+    </section>
+    <section id="section-3">
+        <div class="about">
+            <h2 class="header header--tertiary">
+                About this project
+            </h2>
+            <p class="pledge-details">
+                The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen
+                to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve
+                your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+
+                Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer
+                to allow notepads, pens, and USB sticks to be stored under the stand.
+            </p>
+            <% for(let i = 0; i < pledgeTypes.length ;i++){ %>
+            <section class="pledge-box">
+                <div class="pledge-box--header">
+                    <h2 class="header header--tertiary"><%= pledgeTypes[i].pledgeHeader%></h2>
+                    <p class="pledge-box--amount"><%= pledgeTypes[i].pledgeAmount%></p>
+                </div>
+                <p class="pledge-details"><%= pledgeTypes[i].pledgeStatement%></p>
+                <div class="btn-options btn-options--secondary">
+                    <h1 class="header header--secondary pledge-count"><%= pledgeTypes[i].pledgeCount%></h1>
+                    <a class="btn pledge-condition">Select Reward</a>
+                </div>
+            </section>
+
+            <% } %>
+        </div>
+    </section>
+
+    <!-- <div class="overlay"> -->
+    <section id="section-4">
+        <span class="close">x</span>
+        <h1 class="header header--main">Back This Project</h1>
+        <p class="backer-cta">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+        <section class="pledge-box">
+            <div class="pledge-box--inner-header">
+                <label class="pledge-box--check">
+                    <input type="checkbox">
+                    <span class="checkmark checkmark-first">
+                    </span>
+                    <h2 class="header header--tertiary">Pledge with no reward</h2>
+                </label>
+                <h1 class="header header--secondary pledge-count">1</h1>
+            </div>
+            <p class="pledge-details">
+                Choose to support us without a reward if you simply believe in our project. As a backer,
+                you will be signed up to receive product updates via email.
+            </p>
+            <hr class="divider">
+            <form action="/" method="post">
+                <label class="pledge-box--submit">
+                    <p>Enter Your Pledge</p>
+                    <div class="pledge-box--submit-currency-box">
+                        <span class="pledge-box--submit-currency">
+                            <input type="text" class="pledge-box--submit-text">
+                        </span>
+                        <button type="submit" class="btn">Continue</button>
+                    </div>
+                </label>
+            </form>
+        </section>
+        <% for(let i = 0; i < pledgeTypes.length ;i++){ %>
+
+        <section class="pledge-box">
+            <div class="pledge-box--inner-header">
+                <label class="pledge-box--check">
+                    <input type="checkbox">
+                    <span class="checkmark">
+                    </span>
+                    <h2 class="header header--tertiary"><%= pledgeTypes[i].pledgeHeader%></h2>
+                </label>
+                <p class="pledge-box--amount"><%= pledgeTypes[i].pledgeAmount%></p>
+                <h1 class="header header--secondary pledge-count"><%= pledgeTypes[i].pledgeCount%></h1>
+            </div>
+            <p class="pledge-details"><%= pledgeTypes[i].pledgeStatement%></p>
+            <hr class="divider">
+            <form action="/" method="post">
+                <label class="pledge-box--submit">
+                    <p>Enter Your Pledge</p>
+                    <div class="pledge-box--submit-currency-box">
+                        <span class="pledge-box--submit-currency">
+                            <input type="text" name="pledge" class="pledge-box--submit-text">
+                        </span>
+                        <button type="submit" class="btn">Continue</button>
+                    </div>
+                </label>
+            </form>
+        </section>
+
+        <% } %>
+
+    </section>
+    <!-- </div> -->
+</div>
+<%- include("partials/_footer.ejs") %>

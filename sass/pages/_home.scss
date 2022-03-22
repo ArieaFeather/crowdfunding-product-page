@@ -1,0 +1,153 @@
+body {
+    position: relative;
+    background-image: url("images/image-hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0 10%;
+    padding-top: 35px;
+    font-family: $font-primary;
+    @media (max-width: $bp-mobile) {
+        background-image: url("images/image-hero-mobile.jpg");
+        padding: 0 17px;
+        padding-top: 35px;
+    }
+}
+
+.container {
+    position: relative;
+    margin: 0 12rem;
+    #mc-logo {
+        position: absolute;
+        top: 0%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        z-index: 100;
+    }
+    @media (max-width: $bp-laptop) {
+        margin: 0 5rem;
+    }
+    @media (max-width: $bp-laptop) {
+        margin: 0;
+    }
+}
+p {
+    color: $color-neutral-2;
+}
+
+section {
+    position: relative;
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+#section-1 {
+    text-align: center;
+    p {
+        margin-bottom: 30px;
+    }
+}
+#section-4 {
+    .pledge-box {
+        padding-left: 4rem;
+        @media (max-width: $bp-mobile) {
+            padding-left: inherit;
+        }
+    }
+}
+.divider {
+    @media (max-width: $bp-mobile) {
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+}
+.header {
+    font-size: 28px;
+    &:not(h2) {
+        margin-bottom: 0px;
+        @media (max-width: $bp-mobile) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &--secondary {
+        margin-top: 0;
+        position: relative;
+        &::after {
+            vertical-align: 4px;
+            content: "left";
+            color: $color-neutral-2;
+            font-size: 21px;
+            font-weight: $font-weight-sm;
+            margin-left: 10px;
+        }
+    }
+    &--tertiary {
+        font-size: 20px;
+    }
+}
+
+.backer-block--stat {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+    margin-bottom: 1rem;
+    @media (max-width: $bp-mobile) {
+        grid-template-columns: 1fr;
+        text-align: center;
+        hr {
+            width: 25%;
+        }
+    }
+}
+.backer-stat {
+    margin-top: 7px;
+}
+
+.backer-progressbar {
+    position: relative;
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    &::before {
+        position: absolute;
+        content: "";
+        top: -6px;
+        left: -4px;
+        border: 6px solid $color-primary-1;
+        border-radius: 50px;
+        width: 75%;
+    }
+}
+
+.close {
+    position: absolute;
+    cursor: pointer;
+    top: 6px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: $font-weight-lg;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(1, 1, 1, 0.6);
+    padding: 1rem 21rem;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.visible {
+    display: block;
+}
+
+.selected {
+    border-color: $color-primary-1;
+}

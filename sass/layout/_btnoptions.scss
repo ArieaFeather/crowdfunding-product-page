@@ -1,0 +1,10 @@
+.btn-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: $bp-mobile) {
+        &:not(:first-of-type) {
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+//BREAKPOINTS
+/*
+    Desktop: 1440px;
+    Tablet: 768px;
+    Mobile: 375px;
+    Mobile-sm: 350px;
+*/
+$bp-desktop: 1440px;
+$bp-laptop: 1024px;
+$bp-tablet: 768px;
+$bp-mobile: 375px;
+$bp-mobile-sm: 350pxpx;
+//COLOURS
+
+$color-primary-1: #3cb4ac; //Moderate Cyan
+$color-primary-2: #147b74; //Dark Cyan
+$color-neutral-1: #000000; //Black
+$color-neutral-2: #7a7a7a; //Dark Gray
+
+//FONTS
+$default-font-size: 16px;
+$font-primary: "Commissioner", sans-serif;
+$font-weight-sm: 400;
+$font-weight-md: 500;
+$font-weight-lg: 700;

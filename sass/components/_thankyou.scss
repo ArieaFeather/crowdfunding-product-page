@@ -1,0 +1,12 @@
+.thankyou-msg {
+    position: fixed;
+    text-align: center;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-25vw, -25vh);
+    z-index: 1001;
+    @media (max-width: $bp-mobile) {
+        left: 15vw;
+        transform: translate(-7vw, -25vh);
+    }
+}
