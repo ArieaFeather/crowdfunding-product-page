@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -24,6 +25,12 @@ app.post("/", (req, res) => {
         pledgeTypes: pledges.pledgeOptions,
     });
 });
-app.listen(8080, () => {
-    console.log("Press [X] to Start");
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+    port = 3000;
+}
+
+app.listen(port, () => {
+    console.log("Quest Started!");
 });
