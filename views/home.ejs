@@ -84,69 +84,69 @@
         </div>
     </section>
 
-    <!-- <div class="overlay"> -->
-    <section id="section-4">
-        <span class="close">x</span>
-        <h1 class="header header--main">Back This Project</h1>
-        <p class="backer-cta">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
-        <section class="pledge-box">
-            <div class="pledge-box--inner-header">
-                <label class="pledge-box--check">
-                    <input type="checkbox">
-                    <span class="checkmark checkmark-first">
-                    </span>
-                    <h2 class="header header--tertiary">Pledge with no reward</h2>
-                </label>
-                <h1 class="header header--secondary pledge-count">1</h1>
-            </div>
-            <p class="pledge-details">
-                Choose to support us without a reward if you simply believe in our project. As a backer,
-                you will be signed up to receive product updates via email.
-            </p>
-            <hr class="divider">
-            <form action="/" method="post">
-                <label class="pledge-box--submit">
-                    <p>Enter Your Pledge</p>
-                    <div class="pledge-box--submit-currency-box">
-                        <span class="pledge-box--submit-currency">
-                            <input type="text" class="pledge-box--submit-text">
+    <div class="overlay">
+        <section id="section-4">
+            <span class="close">x</span>
+            <h1 class="header header--main">Back This Project</h1>
+            <p class="backer-cta">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+            <section class="pledge-box">
+                <div class="pledge-box--inner-header">
+                    <label class="pledge-box--check">
+                        <input type="checkbox">
+                        <span class="checkmark checkmark-first">
                         </span>
-                        <button type="submit" class="btn">Continue</button>
-                    </div>
-                </label>
-            </form>
-        </section>
-        <% for(let i = 0; i < pledgeTypes.length ;i++){ %>
+                        <h2 class="header header--tertiary">Pledge with no reward</h2>
+                    </label>
+                    <h1 class="header header--secondary pledge-count">1</h1>
+                </div>
+                <p class="pledge-details">
+                    Choose to support us without a reward if you simply believe in our project. As a backer,
+                    you will be signed up to receive product updates via email.
+                </p>
+                <hr class="divider">
+                <form action="/" method="post">
+                    <label class="pledge-box--submit">
+                        <p>Enter Your Pledge</p>
+                        <div class="pledge-box--submit-currency-box">
+                            <span class="pledge-box--submit-currency">
+                                <input type="text" class="pledge-box--submit-text">
+                            </span>
+                            <button type="submit" class="btn">Continue</button>
+                        </div>
+                    </label>
+                </form>
+            </section>
+            <% for(let i = 0; i < pledgeTypes.length ;i++){ %>
 
-        <section class="pledge-box">
-            <div class="pledge-box--inner-header">
-                <label class="pledge-box--check">
-                    <input type="checkbox">
-                    <span class="checkmark">
-                    </span>
-                    <h2 class="header header--tertiary"><%= pledgeTypes[i].pledgeHeader%></h2>
-                </label>
-                <p class="pledge-box--amount"><%= pledgeTypes[i].pledgeAmount%></p>
-                <h1 class="header header--secondary pledge-count"><%= pledgeTypes[i].pledgeCount%></h1>
-            </div>
-            <p class="pledge-details"><%= pledgeTypes[i].pledgeStatement%></p>
-            <hr class="divider">
-            <form action="/" method="post">
-                <label class="pledge-box--submit">
-                    <p>Enter Your Pledge</p>
-                    <div class="pledge-box--submit-currency-box">
-                        <span class="pledge-box--submit-currency">
-                            <input type="text" name="pledge" class="pledge-box--submit-text">
+            <section class="pledge-box">
+                <div class="pledge-box--inner-header">
+                    <label class="pledge-box--check">
+                        <input type="checkbox">
+                        <span class="checkmark">
                         </span>
-                        <button type="submit" class="btn">Continue</button>
-                    </div>
-                </label>
-            </form>
+                        <h2 class="header header--tertiary"><%= pledgeTypes[i].pledgeHeader%></h2>
+                    </label>
+                    <p class="pledge-box--amount"><%= pledgeTypes[i].pledgeAmount%></p>
+                    <h1 class="header header--secondary pledge-count"><%= pledgeTypes[i].pledgeCount%></h1>
+                </div>
+                <p class="pledge-details"><%= pledgeTypes[i].pledgeStatement%></p>
+                <hr class="divider">
+                <form action="/" method="post">
+                    <label class="pledge-box--submit">
+                        <p>Enter Your Pledge</p>
+                        <div class="pledge-box--submit-currency-box">
+                            <span class="pledge-box--submit-currency">
+                                <input type="text" name="pledge" class="pledge-box--submit-text">
+                            </span>
+                            <button type="submit" class="btn">Continue</button>
+                        </div>
+                    </label>
+                </form>
+            </section>
+
+            <% } %>
+
         </section>
-
-        <% } %>
-
-    </section>
-    <!-- </div> -->
+    </div>
 </div>
 <%- include("partials/_footer.ejs") %>
