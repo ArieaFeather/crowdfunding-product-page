@@ -20,7 +20,7 @@
 .nav:first-child {
   margin-bottom: 13.75rem;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .nav:first-child {
     margin-bottom: 10.75rem;
   }
@@ -30,7 +30,7 @@
   justify-content: flex-end;
   gap: 25px;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .nav-bar {
     display: none;
     position: absolute;
@@ -47,7 +47,7 @@
   text-decoration: none;
   color: white;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .nav-link {
     color: black;
   }
@@ -63,7 +63,7 @@
   height: 50px;
   cursor: pointer;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   #hamburg-menu {
     display: block;
   }
@@ -150,7 +150,7 @@ b:nth-child(3) {
   font-weight: 700;
   padding: 20px 55px;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .btn {
     padding: 19px 35px;
   }
@@ -162,7 +162,7 @@ b:nth-child(3) {
   cursor: pointer;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .pledge-condition {
     padding: 19px 20px;
   }
@@ -180,12 +180,12 @@ b:nth-child(3) {
   background-color: rgba(122, 122, 122, 0.2);
   padding-right: 20px;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .bookmark-box {
     padding-right: 0;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .bookmark-box .bookmark {
     display: none;
   }
@@ -196,7 +196,7 @@ b:nth-child(3) {
   vertical-align: middle;
   margin-right: 10px;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .bookmark-box .bookmark::before {
     margin-right: 0;
   }
@@ -204,7 +204,7 @@ b:nth-child(3) {
 .bookmark-box .bookmark--mob {
   display: none;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .bookmark-box .bookmark--mob {
     display: inline-block;
   }
@@ -227,7 +227,7 @@ b:nth-child(3) {
   transform: translate(-25vw, -25vh);
   z-index: 1001;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .thankyou-msg {
     left: 15vw;
     transform: translate(-7vw, -25vh);
@@ -245,7 +245,7 @@ b:nth-child(3) {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .pledge-box--header {
     flex-direction: column;
   }
@@ -288,7 +288,7 @@ b:nth-child(3) {
 .pledge-box--check .checkmark-first {
   top: 0;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .pledge-box--check .checkmark {
     margin-top: 10px;
   }
@@ -315,7 +315,7 @@ b:nth-child(3) {
   display: flex;
   align-items: baseline;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .pledge-box--inner-header {
     flex-direction: column;
     margin-left: 2rem;
@@ -327,7 +327,7 @@ b:nth-child(3) {
 .pledge-box--inner-header .header:after {
   vertical-align: baseline;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .pledge-box--inner-header .header:not(h1) {
     font-size: 1rem;
     margin-bottom: 0;
@@ -336,7 +336,7 @@ b:nth-child(3) {
 .pledge-box--inner-header .pledge-box--amount {
   margin-left: 15px;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .pledge-box--inner-header .pledge-box--amount {
     margin-left: 0;
   }
@@ -350,7 +350,7 @@ b:nth-child(3) {
   justify-content: right;
   align-items: flex-end;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .pledge-box--submit {
     margin-top: 3rem;
     display: grid;
@@ -361,7 +361,7 @@ b:nth-child(3) {
 .pledge-box--submit p {
   margin-right: auto;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .pledge-box--submit p {
     margin-right: 0;
     justify-self: center;
@@ -387,7 +387,7 @@ b:nth-child(3) {
 .pledge-box--submit-currency-box {
   position: relative;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .pledge-box--submit-currency-box {
     display: flex;
     justify-content: center;
@@ -408,7 +408,7 @@ b:nth-child(3) {
   font-size: 16px;
   cursor: pointer;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .pledge-box--submit button {
     padding: 17px 20px;
   }
@@ -429,7 +429,7 @@ b:nth-child(3) {
   justify-content: space-between;
   align-items: flex-start;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .btn-options:not(:first-of-type) {
     flex-direction: column;
   }
@@ -446,7 +446,7 @@ body {
   padding-top: 35px;
   font-family: "Commissioner", sans-serif;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   body {
     background-image: url("images/image-hero-mobile.jpg");
     padding: 0 17px;
@@ -500,13 +500,13 @@ section:not(:last-child) {
 #section-4 .pledge-box {
   padding-left: 4rem;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   #section-4 .pledge-box {
     padding-left: inherit;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .divider {
     position: absolute;
     width: 100%;
@@ -520,7 +520,7 @@ section:not(:last-child) {
 .header:not(h2) {
   margin-bottom: 0px;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .header:not(h2) {
     margin-bottom: 1rem;
   }
@@ -546,7 +546,7 @@ section:not(:last-child) {
   grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
   margin-bottom: 1rem;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   .backer-block--stat {
     grid-template-columns: 1fr;
     text-align: center;
