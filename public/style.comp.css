@@ -452,7 +452,7 @@ body {
   transform: translate(50%, -50%);
   z-index: 100;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .container {
     margin: 0 5rem;
   }
@@ -583,6 +583,11 @@ section:not(:last-child) {
   padding: 1rem 21rem;
   box-sizing: border-box;
   overflow: auto;
+}
+@media (max-width: 1024px) {
+  .overlay {
+    padding: 1rem 12vw;
+  }
 }
 
 .visible {

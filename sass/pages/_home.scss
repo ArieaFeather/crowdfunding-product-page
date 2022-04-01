@@ -25,10 +25,10 @@ body {
         transform: translate(50%, -50%);
         z-index: 100;
     }
-    @media (max-width: $bp-laptop) {
+    @media (max-width: $bp-desktop) {
         margin: 0 5rem;
     }
-    @media (max-width: $bp-laptop) {
+    @media (max-width: $bp-tablet) {
         margin: 0;
     }
 }
@@ -143,6 +143,9 @@ section {
     padding: 1rem 21rem;
     box-sizing: border-box;
     overflow: auto;
+    @media (max-width: $bp-tablet) {
+        padding: 1rem 12vw;
+    }
 }
 .visible {
     display: block;
